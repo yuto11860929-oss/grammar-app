@@ -1,0 +1,83 @@
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: var(--radius-md);
+    font-family: var(--font-sans);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    outline: none;
+}
+
+.button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Variants */
+.primary {
+    background-color: var(--color-primary);
+    color: white;
+    box-shadow: 0 4px 14px 0 rgba(99, 102, 241, 0.39);
+}
+
+.primary:hover:not(:disabled) {
+    background-color: var(--color-primary-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.23);
+}
+
+.primary:active:not(:disabled) {
+    transform: translateY(1px);
+}
+
+.secondary {
+    background-color: var(--color-surface);
+    color: var(--color-text-main);
+    border: 1px solid var(--color-border);
+}
+
+.secondary:hover:not(:disabled) {
+    background-color: var(--color-surface-hover);
+}
+
+.danger {
+    background-color: var(--color-error);
+    color: white;
+}
+
+.danger:hover:not(:disabled) {
+    filter: brightness(1.1);
+}
+
+.ghost {
+    background: transparent;
+    color: var(--color-text-muted);
+}
+
+.ghost:hover:not(:disabled) {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--color-text-main);
+}
+
+/* Sizes */
+.sm {
+    padding: 0.25rem 0.75rem;
+    font-size: 0.875rem;
+}
+
+.md {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+.lg {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.125rem;
+}
+
+.fullWidth {
+    width: 100%;
+}

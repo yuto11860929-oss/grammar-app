@@ -1,0 +1,77 @@
+:root {
+  /* Animation variables */
+  --transition-fast: 0.2s ease;
+
+  /* Base Light Mode Palette (Default) */
+  --color-bg: #f8f9fa;
+  /* Very light grey */
+  --color-surface: #ffffff;
+  --color-surface-hover: #f1f5f9;
+
+  --color-text-main: #334155;
+  /* Slate 700 */
+  --color-text-muted: #94a3b8;
+  /* Slate 400 */
+
+  /* Shared Colors */
+  --color-success: #4ade80;
+  --color-error: #f87171;
+  --color-border: #e2e8f0;
+
+  /* Fonts */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.06);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+
+  /* Radius */
+  --radius-sm: 0.5rem;
+  /* 8px */
+  --radius-md: 0.75rem;
+  /* 12px */
+  --radius-lg: 1rem;
+  /* 16px */
+  --radius-xl: 1.5rem;
+  /* 24px */
+
+  /* Primary Theme (Teal based on user request) */
+  --color-primary: #009688;
+  /* Main Teal */
+  --color-primary-dark: #00796B;
+  /* Darker Teal for hover */
+  --color-primary-light: #E0F2F1;
+  /* Very light Teal for backgrounds */
+  --color-accent: #00897B;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text-main);
+  font-family: var(--font-sans);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: var(--radius-md);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

@@ -1,0 +1,78 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.createCard {
+    margin-bottom: 2rem;
+    background: rgba(99, 102, 241, 0.05);
+    /* Slight tint */
+}
+
+.formGrid {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.error {
+    color: var(--color-error);
+    font-size: 0.875rem;
+    margin-top: 1rem;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.studentRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem !important;
+}
+
+.studentInfo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.avatar {
+    background: var(--color-surface-hover);
+    padding: 0.75rem;
+    border-radius: 50%;
+    color: var(--color-primary);
+}
+
+.name {
+    font-weight: 600;
+    font-size: 1.125rem;
+}
+
+.meta {
+    color: var(--color-text-muted);
+    font-size: 0.875rem;
+}
+
+.empty {
+    text-align: center;
+    color: var(--color-text-muted);
+    margin-top: 2rem;
+}

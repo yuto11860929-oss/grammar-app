@@ -1,0 +1,88 @@
+.container {
+    padding: 32px;
+}
+
+.header {
+    margin-bottom: 32px;
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #111827;
+}
+
+.tableCard {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 32px;
+}
+
+.tableHeader {
+    padding: 20px;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tableTitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #374151;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.th {
+    text-align: left;
+    padding: 16px 24px;
+    background: #f9fafb;
+    color: #6b7280;
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+}
+
+.td {
+    padding: 16px 24px;
+    border-bottom: 1px solid #f3f4f6;
+    color: #1f2937;
+}
+
+.tr:last-child .td {
+    border-bottom: none;
+}
+
+.tr:hover {
+    background: #f9fafb;
+}
+
+.badge {
+    display: inline-flex;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.badgeWarning {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+.badgeSuccess {
+    background: #ecfdf5;
+    color: #059669;
+}
+
+.weakWords {
+    font-size: 0.85rem;
+    color: #6b7280;
+    max-width: 300px;
+}

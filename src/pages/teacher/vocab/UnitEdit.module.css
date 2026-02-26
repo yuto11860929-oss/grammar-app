@@ -1,0 +1,97 @@
+.container {
+    padding: 32px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.headerLeft {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #111827;
+}
+
+.titleInput {
+    font-size: 2rem;
+    font-weight: 800;
+    padding: 4px 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    color: #111827;
+}
+
+.headerActions {
+    display: flex;
+    gap: 12px;
+}
+
+.card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+.pasteArea {
+    width: 100%;
+    min-height: 200px;
+    padding: 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    font-family: monospace;
+    margin-bottom: 16px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.row:last-child {
+    border-bottom: none;
+}
+
+.wordContent {
+    flex: 1;
+}
+
+.wordText {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.meaningText {
+    font-size: 1rem;
+    color: #4b5563;
+}
+
+.deleteBtn {
+    color: #ef4444;
+    padding: 8px;
+    border-radius: 8px;
+    transition: background 0.2s;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.deleteBtn:hover {
+    background: #fee2e2;
+}
