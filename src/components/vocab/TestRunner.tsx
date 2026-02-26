@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import type { Word, UserWordLog } from "../../types/vocab";
+import type { Word } from "../../types/vocab";
 import { Card } from "./Card";
 import { SpacedRepetitionSystem } from "../../logic/SpacedRepetition";
 import { sheetService } from "../../services/SheetService";

@@ -76,7 +76,7 @@ const initDemoCourses = () => {
                     { id: 'q2', number: 2, question: 'I play soccer.', answer: '私はサッカーをします。', teacherComment: '一般動詞' },
                     { id: 'q3', number: 3, question: 'She is happy.', answer: '彼女は幸せです。', teacherComment: 'Be動詞' },
                 ],
-                createdAt: new Date().toISOString()
+                createdAt: Date.now()
             },
             {
                 id: 'demo-course-2',
@@ -86,7 +86,7 @@ const initDemoCourses = () => {
                     { id: 'w2', number: 2, question: 'Run', answer: '走る', teacherComment: '' },
                     { id: 'w3', number: 3, question: 'Beautiful', answer: '美しい', teacherComment: '' },
                 ],
-                createdAt: new Date().toISOString()
+                createdAt: Date.now()
             }
         ];
 
