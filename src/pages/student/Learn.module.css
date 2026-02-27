@@ -51,7 +51,7 @@
 }
 
 .flashcard {
-    min-height: 300px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -4,6 +4,7 @@ import { storage } from '../../utils/storage';
 import { repetition } from '../../utils/repetition';
 import { type Course, type StudentCourseProgress } from '../../types';
 import { Card } from '../../components/Card';
+import { FlipCard } from '../../components/FlipCard';
 import { Button } from '../../components/Button';
 import styles from './Learn.module.css';
 import { useAuth } from '../../context/AuthContext';
@@ -194,13 +195,21 @@ export const StudentLearn: React.FC = () => {
             </div>
 
             <div className={styles.flashcardContainer}>
-                <Card className={styles.flashcard}>
-                    <div className={styles.cardContent}>
-                        <div className={styles.label}>問題 {currentQ.number}</div>
-                        <div className={styles.questionText}>{currentQ.question}</div>
-                    </div>
-
-                    {sessionState !== 'question' && (
+                <FlipCard
+                    className={styles.flashcard}
+                    isFlipped={sessionState !== 'question'}
+                    onFlip={() => {
+                        if (sessionState === 'question') {
+                            handleShowAnswer();
+                        }
+                    }}
+                    frontContent={
+                        <div className={styles.cardContent}>
+                            <div className={styles.label}>問題 {currentQ.number}</div>
+                            <div className={styles.questionText}>{currentQ.question}</div>
+                        </div>
+                    }
+                    backContent={
                         <div className={`${styles.cardContent} ${styles.answerSection}`}>
                             <div className={styles.label}>正解</div>
                             <div className={styles.answerText}>{currentQ.answer}</div>
@@ -210,8 +219,8 @@ export const StudentLearn: React.FC = () => {
                                 </div>
                             )}
                         </div>
-                    )}
-                </Card>
+                    }
+                />
             </div>
 
             <div className={styles.controls}>
