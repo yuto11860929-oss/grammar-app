@@ -51,12 +51,18 @@
 }
 
 .flashcard {
+    max-width: 400px;
     height: 400px;
+    margin: 0 auto;
+}
+
+.cardContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
-    position: relative;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
 .cardLabel {

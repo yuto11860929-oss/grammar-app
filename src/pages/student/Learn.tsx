@@ -204,31 +204,29 @@ export const StudentLearn: React.FC = () => {
                         }
                     }}
                     frontContent={
-                        <div className={styles.cardContent}>
+                        <>
                             <div className={styles.label}>問題 {currentQ.number}</div>
                             <div className={styles.questionText}>{currentQ.question}</div>
-                        </div>
+                            <div style={{ fontSize: '0.8rem', color: '#999', marginTop: '1rem' }}>Tap to Flip</div>
+                        </>
                     }
                     backContent={
-                        <div className={`${styles.cardContent} ${styles.answerSection}`}>
+                        <>
                             <div className={styles.label}>正解</div>
                             <div className={styles.answerText}>{currentQ.answer}</div>
                             {currentQ.teacherComment && (
-                                <div className={styles.comment}>
-                                    <strong>解説:</strong> {currentQ.teacherComment}
+                                <div className={styles.commentBox}>
+                                    <div className={styles.commentLabel}>解説</div>
+                                    <div className={styles.commentText}>{currentQ.teacherComment}</div>
                                 </div>
                             )}
-                        </div>
+                        </>
                     }
                 />
             </div>
 
             <div className={styles.controls}>
-                {sessionState === 'question' ? (
-                    <Button size="lg" fullWidth onClick={handleShowAnswer}>
-                        正解を表示
-                    </Button>
-                ) : (
+                {sessionState !== 'question' && (
                     <div className={styles.gradingButtons}>
                         <Button
                             className={styles.gradeBtn}
